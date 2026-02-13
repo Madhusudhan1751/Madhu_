@@ -1,3 +1,12 @@
+// Add this at the beginning of your <script> section
+const password = prompt("Please enter the secret code to open your surprise:");
+
+if (password !== "OurAnniversaryDate") { // Change "OurAnniversaryDate" to your chosen password
+    alert("Incorrect password!");
+    document.body.innerHTML = "<h1>Access Denied. This is a private surprise.</h1>";
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -216,4 +225,5 @@
         setInterval(createHeart, 300);
     </script>
 </body>
+
 </html>
